@@ -328,3 +328,10 @@ ul {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+.world {
+  height: 100vh;
+  background-image: url("/src/assets/map-bg.jpeg");
+  background-size: cover; 
+  background-repeat: no-repeat;
+}

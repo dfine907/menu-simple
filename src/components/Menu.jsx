@@ -1,9 +1,14 @@
 import React from 'react'
+import MenuItem from './MenuItem'
 
-const Menu = () => {
+const Menu = ( {items }) => {
   return (
     <>
-      <h2>Items</h2>
+      <div className='section-center'>
+        
+      {items.map((menuItem)=> {
+        return <MenuItem key={menuItem.id} {...menuItem} />
+      })}</div>
     </>
   )
 }
